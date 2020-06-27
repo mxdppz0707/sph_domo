@@ -1,5 +1,6 @@
 一、项目结构
 --- sph_demo 父级项目 sql文件夹内有项目初始化sql
+
 ------  cloud_config 配置中心 从git地址:https://github.com/mxdppz0707/cloudConfig 上拉取配置数据
 
 ------  spring_gateway 网关项目 集成了jwt验证和redis缓存，相关配置从配置中心拉取。web请求的单元测试放置在test目录下
