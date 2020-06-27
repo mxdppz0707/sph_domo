@@ -1,0 +1,26 @@
+server:
+  port: 8094
+
+spring:
+  application:
+    name: content-microservice
+  datasource:
+    url: jdbc:mysql://localhost:3306/sph?useUnicode=true&characterEncoding=utf-8&useSSL=true
+    username: root
+    password: 123456
+    dbcp2:
+      min-idle: 5
+      initial-size: 5
+      max-total: 5
+      max-wait-millis: 200
+
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8762/eureka
+    registryFetchIntervalSeconds: 5
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
