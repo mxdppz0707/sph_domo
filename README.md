@@ -14,9 +14,13 @@
 ------  admin_web admin后端管理服务端
 
 二、启动顺序
+
 cloud_confi -> spring_gateway -> support_microservice | content_microservice | app_web app | admin_web admin
 
 三、注意事项
+
 1.jdk版本1.8
+
 2.注册中心使用 eureka,项目启动前，请先下载eureka服务端并启动
+
 3.缓存使用redis，请先下载redis并启动，默认端口号 6379
